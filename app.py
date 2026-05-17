@@ -1,5 +1,7 @@
 import os
 import re
+import requests
+from urllib.parse import quote
 from flask import Flask, request, jsonify
 import cloudscraper
 from bs4 import BeautifulSoup
