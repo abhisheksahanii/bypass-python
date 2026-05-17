@@ -49,7 +49,7 @@ def bypass_url(url, depth=0):
         )
 
         # Try bypass.city API style first
-        bypass_url_encoded = requests.utils.quote(url, safe='')
+        bypass_url_encoded = quote(url, safe='')
         response = scraper.get(
             f'https://bypass.city/bypass?bypass={bypass_url_encoded}',
             timeout=30,
